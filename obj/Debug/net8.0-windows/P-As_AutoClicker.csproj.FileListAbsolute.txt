@@ -4,3 +4,14 @@ C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoC
 C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.AssemblyInfoInputs.cache
 C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.AssemblyInfo.cs
 C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.csproj.CoreCompileInputs.cache
+C:\Users\pierr\source\repos\P-As_AutoClicker\bin\Debug\net8.0-windows\P-As_AutoClicker.exe
+C:\Users\pierr\source\repos\P-As_AutoClicker\bin\Debug\net8.0-windows\P-As_AutoClicker.deps.json
+C:\Users\pierr\source\repos\P-As_AutoClicker\bin\Debug\net8.0-windows\P-As_AutoClicker.runtimeconfig.json
+C:\Users\pierr\source\repos\P-As_AutoClicker\bin\Debug\net8.0-windows\P-As_AutoClicker.dll
+C:\Users\pierr\source\repos\P-As_AutoClicker\bin\Debug\net8.0-windows\P-As_AutoClicker.pdb
+C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.sourcelink.json
+C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.dll
+C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\refint\P-As_AutoClicker.dll
+C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.pdb
+C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.genruntimeconfig.cache
+C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\ref\P-As_AutoClicker.dll

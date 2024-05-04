@@ -21,7 +21,7 @@ namespace P_As_AutoClicker
 
         public static void PerformLeftClick(int x, int y)
         {
-            // Move the cursor to the desired position (optional)
+            // Move the cursor to the desired position
             Cursor.Position = new Point(x, y);
 
             // Perform the left mouse click

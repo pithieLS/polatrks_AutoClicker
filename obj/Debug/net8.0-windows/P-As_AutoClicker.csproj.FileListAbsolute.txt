@@ -1,4 +1,3 @@
-C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P_As_AutoClicker.Form1.resources
 C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.csproj.GenerateResource.cache
 C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.AssemblyInfoInputs.cache
@@ -15,3 +14,6 @@ C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\refint\P-A
 C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.pdb
 C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P-As_AutoClicker.genruntimeconfig.cache
 C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\ref\P-As_AutoClicker.dll
+C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P_As_AutoClicker.MainWindow.resources
+C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P_As_AutoClicker.AskKeyForm.resources
+C:\Users\pierr\source\repos\P-As_AutoClicker\obj\Debug\net8.0-windows\P_As_AutoClicker.CursorLocationPicker.resources

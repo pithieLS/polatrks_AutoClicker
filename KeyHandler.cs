@@ -9,36 +9,14 @@ namespace P_As_AutoClicker
 {
     public class KeyHandler
     {
-        [DllImport("user32.dll")]
-        private static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vk);
-
-        [DllImport("user32.dll")]
-        private static extern bool UnregisterHotKey(IntPtr hWnd, int id);
-
-        private int key;
-        private IntPtr hWnd;
-        private int id;
-
-        public KeyHandler(Keys key, Form form)
+        public static void AskNewKey(out Keys newKey)
         {
-            this.key = (int)key;
-            this.hWnd = form.Handle;
-            id = this.GetHashCode();
-        }
-
-        public override int GetHashCode()
-        {
-            return key ^ hWnd.ToInt32();
-        }
-
-        public bool Register()
-        {
-            return RegisterHotKey(hWnd, id, 0, key);
-        }
-
-        public bool Unregiser()
-        {
-            return UnregisterHotKey(hWnd, id);
+            newKey = Keys.None;
+            AskKeyForm newAskKeyForm = new AskKeyForm();
+            Keys capturedKey = newKey; // Capture the out parameter value
+            newAskKeyForm.FormClosing += (s, args) => { capturedKey = newAskKeyForm.newKey; };
+            newAskKeyForm.ShowDialog();
+            newKey = capturedKey; // Assign the captured value back to the out parameter
         }
     }
 

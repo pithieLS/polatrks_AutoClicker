@@ -33,6 +33,7 @@
             btn_Stop = new Button();
             groupBox_TimerSettings = new GroupBox();
             groupBox1 = new GroupBox();
+            label2 = new Label();
             label_Repeat2 = new Label();
             label_Repeat1 = new Label();
             numericUpDown_RepeatN = new NumericUpDown();
@@ -52,13 +53,13 @@
             label1 = new Label();
             groupBox_KeySettings = new GroupBox();
             groupBox_CursorSetting = new GroupBox();
+            numericUpDown_CursorPosY = new NumericUpDown();
+            numericUpDown_CursorPosX = new NumericUpDown();
             label_CursorOffset = new Label();
             numericUpDown_CursorOffset = new NumericUpDown();
             button_PickPosition = new Button();
             label_Y = new Label();
-            textBox_CursorPosY = new TextBox();
             label_X = new Label();
-            textBox_CursorPosX = new TextBox();
             radioButton_OtherPosition = new RadioButton();
             radioButton_CurrentPosition = new RadioButton();
             groupBox2 = new GroupBox();
@@ -76,13 +77,15 @@
             ((System.ComponentModel.ISupportInitialize)numericUpDown_DelayOffset).BeginInit();
             groupBox_KeySettings.SuspendLayout();
             groupBox_CursorSetting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_CursorPosY).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_CursorPosX).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown_CursorOffset).BeginInit();
             groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // btn_Start
             // 
-            btn_Start.Location = new Point(223, 337);
+            btn_Start.Location = new Point(223, 350);
             btn_Start.Name = "btn_Start";
             btn_Start.Size = new Size(135, 53);
             btn_Start.TabIndex = 0;
@@ -91,12 +94,13 @@
             // 
             // btn_Stop
             // 
-            btn_Stop.Location = new Point(364, 337);
+            btn_Stop.Location = new Point(364, 350);
             btn_Stop.Name = "btn_Stop";
             btn_Stop.Size = new Size(135, 53);
             btn_Stop.TabIndex = 1;
             btn_Stop.Text = "STOP \r\n(HOTKEY)\r\n";
             btn_Stop.UseVisualStyleBackColor = true;
+            btn_Stop.Click += btn_Stop_Click;
             // 
             // groupBox_TimerSettings
             // 
@@ -104,13 +108,14 @@
             groupBox_TimerSettings.Controls.Add(groupBox_Delay);
             groupBox_TimerSettings.Location = new Point(12, 12);
             groupBox_TimerSettings.Name = "groupBox_TimerSettings";
-            groupBox_TimerSettings.Size = new Size(245, 319);
+            groupBox_TimerSettings.Size = new Size(245, 332);
             groupBox_TimerSettings.TabIndex = 2;
             groupBox_TimerSettings.TabStop = false;
             groupBox_TimerSettings.Text = "Timer settings";
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label_Repeat2);
             groupBox1.Controls.Add(label_Repeat1);
             groupBox1.Controls.Add(numericUpDown_RepeatN);
@@ -122,6 +127,18 @@
             groupBox1.TabIndex = 8;
             groupBox1.TabStop = false;
             groupBox1.Text = "Delay";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = SystemColors.ControlDark;
+            label2.Font = new Font("Segoe UI", 30F);
+            label2.ForeColor = Color.Coral;
+            label2.Location = new Point(33, 20);
+            label2.Name = "label2";
+            label2.Size = new Size(164, 67);
+            label2.TabIndex = 9;
+            label2.Text = "TODO";
             // 
             // label_Repeat2
             // 
@@ -283,48 +300,64 @@
             groupBox_KeySettings.Controls.Add(groupBox2);
             groupBox_KeySettings.Location = new Point(268, 12);
             groupBox_KeySettings.Name = "groupBox_KeySettings";
-            groupBox_KeySettings.Size = new Size(232, 319);
+            groupBox_KeySettings.Size = new Size(232, 332);
             groupBox_KeySettings.TabIndex = 3;
             groupBox_KeySettings.TabStop = false;
             groupBox_KeySettings.Text = "Key settings";
             // 
             // groupBox_CursorSetting
             // 
+            groupBox_CursorSetting.Controls.Add(numericUpDown_CursorPosY);
+            groupBox_CursorSetting.Controls.Add(numericUpDown_CursorPosX);
             groupBox_CursorSetting.Controls.Add(label_CursorOffset);
             groupBox_CursorSetting.Controls.Add(numericUpDown_CursorOffset);
             groupBox_CursorSetting.Controls.Add(button_PickPosition);
             groupBox_CursorSetting.Controls.Add(label_Y);
-            groupBox_CursorSetting.Controls.Add(textBox_CursorPosY);
             groupBox_CursorSetting.Controls.Add(label_X);
-            groupBox_CursorSetting.Controls.Add(textBox_CursorPosX);
             groupBox_CursorSetting.Controls.Add(radioButton_OtherPosition);
             groupBox_CursorSetting.Controls.Add(radioButton_CurrentPosition);
             groupBox_CursorSetting.Location = new Point(6, 118);
             groupBox_CursorSetting.Name = "groupBox_CursorSetting";
-            groupBox_CursorSetting.Size = new Size(220, 195);
+            groupBox_CursorSetting.Size = new Size(220, 208);
             groupBox_CursorSetting.TabIndex = 1;
             groupBox_CursorSetting.TabStop = false;
             groupBox_CursorSetting.Text = "Cursor settings";
             // 
+            // numericUpDown_CursorPosY
+            // 
+            numericUpDown_CursorPosY.Location = new Point(79, 89);
+            numericUpDown_CursorPosY.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
+            numericUpDown_CursorPosY.Name = "numericUpDown_CursorPosY";
+            numericUpDown_CursorPosY.Size = new Size(63, 27);
+            numericUpDown_CursorPosY.TabIndex = 13;
+            // 
+            // numericUpDown_CursorPosX
+            // 
+            numericUpDown_CursorPosX.Location = new Point(79, 57);
+            numericUpDown_CursorPosX.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
+            numericUpDown_CursorPosX.Name = "numericUpDown_CursorPosX";
+            numericUpDown_CursorPosX.Size = new Size(63, 27);
+            numericUpDown_CursorPosX.TabIndex = 12;
+            // 
             // label_CursorOffset
             // 
             label_CursorOffset.AutoSize = true;
-            label_CursorOffset.Location = new Point(106, 160);
+            label_CursorOffset.Location = new Point(106, 176);
             label_CursorOffset.Name = "label_CursorOffset";
-            label_CursorOffset.Size = new Size(108, 20);
+            label_CursorOffset.Size = new Size(105, 20);
             label_CursorOffset.TabIndex = 11;
-            label_CursorOffset.Text = "+/- Offset (ms)";
+            label_CursorOffset.Text = "+/- Offset (px)";
             // 
             // numericUpDown_CursorOffset
             // 
-            numericUpDown_CursorOffset.Location = new Point(10, 158);
+            numericUpDown_CursorOffset.Location = new Point(10, 174);
             numericUpDown_CursorOffset.Name = "numericUpDown_CursorOffset";
             numericUpDown_CursorOffset.Size = new Size(93, 27);
             numericUpDown_CursorOffset.TabIndex = 10;
             // 
             // button_PickPosition
             // 
-            button_PickPosition.Location = new Point(34, 109);
+            button_PickPosition.Location = new Point(34, 125);
             button_PickPosition.Name = "button_PickPosition";
             button_PickPosition.Size = new Size(150, 42);
             button_PickPosition.TabIndex = 8;
@@ -335,41 +368,25 @@
             // label_Y
             // 
             label_Y.AutoSize = true;
-            label_Y.Location = new Point(186, 71);
+            label_Y.Location = new Point(148, 91);
             label_Y.Name = "label_Y";
             label_Y.Size = new Size(17, 20);
             label_Y.TabIndex = 7;
             label_Y.Text = "Y";
             // 
-            // textBox_CursorPosY
-            // 
-            textBox_CursorPosY.Location = new Point(145, 66);
-            textBox_CursorPosY.Name = "textBox_CursorPosY";
-            textBox_CursorPosY.Size = new Size(39, 27);
-            textBox_CursorPosY.TabIndex = 6;
-            textBox_CursorPosY.Text = "0000";
-            // 
             // label_X
             // 
             label_X.AutoSize = true;
-            label_X.Location = new Point(121, 71);
+            label_X.Location = new Point(147, 59);
             label_X.Name = "label_X";
             label_X.Size = new Size(18, 20);
             label_X.TabIndex = 5;
             label_X.Text = "X";
             // 
-            // textBox_CursorPosX
-            // 
-            textBox_CursorPosX.Location = new Point(81, 66);
-            textBox_CursorPosX.Name = "textBox_CursorPosX";
-            textBox_CursorPosX.Size = new Size(39, 27);
-            textBox_CursorPosX.TabIndex = 4;
-            textBox_CursorPosX.Text = "0000";
-            // 
             // radioButton_OtherPosition
             // 
             radioButton_OtherPosition.AutoSize = true;
-            radioButton_OtherPosition.Location = new Point(6, 66);
+            radioButton_OtherPosition.Location = new Point(6, 73);
             radioButton_OtherPosition.Name = "radioButton_OtherPosition";
             radioButton_OtherPosition.Size = new Size(67, 24);
             radioButton_OtherPosition.TabIndex = 1;
@@ -409,7 +426,7 @@
             // 
             // btn_ChangeStartStopHK
             // 
-            btn_ChangeStartStopHK.Location = new Point(11, 337);
+            btn_ChangeStartStopHK.Location = new Point(11, 350);
             btn_ChangeStartStopHK.Name = "btn_ChangeStartStopHK";
             btn_ChangeStartStopHK.Size = new Size(206, 53);
             btn_ChangeStartStopHK.TabIndex = 4;
@@ -444,6 +461,8 @@
             groupBox_KeySettings.ResumeLayout(false);
             groupBox_CursorSetting.ResumeLayout(false);
             groupBox_CursorSetting.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_CursorPosY).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_CursorPosX).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown_CursorOffset).EndInit();
             groupBox2.ResumeLayout(false);
             ResumeLayout(false);
@@ -476,9 +495,7 @@
         private RadioButton radioButton_OtherPosition;
         private RadioButton radioButton_CurrentPosition;
         private Label label_Y;
-        private TextBox textBox_CursorPosY;
         private Label label_X;
-        private TextBox textBox_CursorPosX;
         private Button button_PickPosition;
         private ToolTip toolTip1;
         private Label label_CursorOffset;
@@ -487,5 +504,8 @@
         private NumericUpDown numericUpDownDelay_Minutes;
         private NumericUpDown numericUpDownDelay_Seconds;
         private NumericUpDown numericUpDownDelay_Hours;
+        private NumericUpDown numericUpDown_CursorPosY;
+        private NumericUpDown numericUpDown_CursorPosX;
+        private Label label2;
     }
 }

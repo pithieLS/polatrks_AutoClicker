@@ -209,6 +209,7 @@
             // numericUpDownDelay_Milliseconds
             // 
             numericUpDownDelay_Milliseconds.Location = new Point(116, 64);
+            numericUpDownDelay_Milliseconds.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
             numericUpDownDelay_Milliseconds.Name = "numericUpDownDelay_Milliseconds";
             numericUpDownDelay_Milliseconds.Size = new Size(65, 27);
             numericUpDownDelay_Milliseconds.TabIndex = 13;
@@ -216,6 +217,7 @@
             // numericUpDownDelay_Minutes
             // 
             numericUpDownDelay_Minutes.Location = new Point(116, 31);
+            numericUpDownDelay_Minutes.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
             numericUpDownDelay_Minutes.Name = "numericUpDownDelay_Minutes";
             numericUpDownDelay_Minutes.Size = new Size(65, 27);
             numericUpDownDelay_Minutes.TabIndex = 12;
@@ -223,6 +225,7 @@
             // numericUpDownDelay_Seconds
             // 
             numericUpDownDelay_Seconds.Location = new Point(4, 64);
+            numericUpDownDelay_Seconds.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
             numericUpDownDelay_Seconds.Name = "numericUpDownDelay_Seconds";
             numericUpDownDelay_Seconds.Size = new Size(65, 27);
             numericUpDownDelay_Seconds.TabIndex = 11;
@@ -230,6 +233,7 @@
             // numericUpDownDelay_Hours
             // 
             numericUpDownDelay_Hours.Location = new Point(4, 31);
+            numericUpDownDelay_Hours.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
             numericUpDownDelay_Hours.Name = "numericUpDownDelay_Hours";
             numericUpDownDelay_Hours.Size = new Size(65, 27);
             numericUpDownDelay_Hours.TabIndex = 10;
@@ -246,6 +250,7 @@
             // numericUpDown_DelayOffset
             // 
             numericUpDown_DelayOffset.Location = new Point(6, 101);
+            numericUpDown_DelayOffset.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
             numericUpDown_DelayOffset.Name = "numericUpDown_DelayOffset";
             numericUpDown_DelayOffset.Size = new Size(99, 27);
             numericUpDown_DelayOffset.TabIndex = 8;
@@ -351,6 +356,7 @@
             // numericUpDown_CursorOffset
             // 
             numericUpDown_CursorOffset.Location = new Point(10, 174);
+            numericUpDown_CursorOffset.Maximum = new decimal(new int[] { 9999, 0, 0, 0 });
             numericUpDown_CursorOffset.Name = "numericUpDown_CursorOffset";
             numericUpDown_CursorOffset.Size = new Size(93, 27);
             numericUpDown_CursorOffset.TabIndex = 10;

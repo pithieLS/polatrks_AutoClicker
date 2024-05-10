@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\pierr\\source\\repos\\P-As_AutoClicker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|c:\\users\\pierr\\source\\repos\\p-as_autoclicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|c:\\users\\pierr\\source\\repos\\p-as_autoclicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|c:\\users\\pierr\\source\\repos\\p-as_autoclicker\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|c:\\users\\pierr\\source\\repos\\p-as_autoclicker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|c:\\users\\pierr\\source\\repos\\p-as_autoclicker\\mousehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|solutionrelative:mousehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|c:\\users\\pierr\\source\\repos\\p-as_autoclicker\\cursorlocationpicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|solutionrelative:cursorlocationpicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|c:\\users\\pierr\\source\\repos\\p-as_autoclicker\\keyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|solutionrelative:keyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|c:\\users\\pierr\\source\\repos\\p-as_autoclicker\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|c:\\users\\pierr\\source\\repos\\p-as_autoclicker\\cursorlocationpicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|solutionrelative:cursorlocationpicker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD300235-7E74-425D-ACBD-677617816E17}|P-As_AutoClicker.csproj|c:\\users\\pierr\\source\\repos\\p-as_autoclicker\\askkeyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CursorLocationPicker.cs",
               "DocumentMoniker": "C:\\Users\\pierr\\source\\repos\\P-As_AutoClicker\\CursorLocationPicker.cs",
               "RelativeDocumentMoniker": "CursorLocationPicker.cs",
@@ -58,51 +58,50 @@
               "RelativeToolTip": "CursorLocationPicker.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAIwDAAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T00:10:28.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T00:10:28.035Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "KeyHandler.cs",
               "DocumentMoniker": "C:\\Users\\pierr\\source\\repos\\P-As_AutoClicker\\KeyHandler.cs",
               "RelativeDocumentMoniker": "KeyHandler.cs",
               "ToolTip": "C:\\Users\\pierr\\source\\repos\\P-As_AutoClicker\\KeyHandler.cs",
               "RelativeToolTip": "KeyHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T16:42:24.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MouseHandler.cs",
               "DocumentMoniker": "C:\\Users\\pierr\\source\\repos\\P-As_AutoClicker\\MouseHandler.cs",
               "RelativeDocumentMoniker": "MouseHandler.cs",
               "ToolTip": "C:\\Users\\pierr\\source\\repos\\P-As_AutoClicker\\MouseHandler.cs",
               "RelativeToolTip": "MouseHandler.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAQwBUAAAAwAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAgwBUAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T23:18:02.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\pierr\\source\\repos\\P-As_AutoClicker\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\pierr\\source\\repos\\P-As_AutoClicker\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABUAAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAcwGYAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T23:08:40.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\pierr\\source\\repos\\P-As_AutoClicker\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -114,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\pierr\\source\\repos\\P-As_AutoClicker\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
@@ -135,8 +134,7 @@
               "RelativeToolTip": "AskKeyForm.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAxwAkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T20:22:05.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T20:22:05.982Z"
             },
             {
               "$type": "Document",

@@ -1,3 +1,6 @@
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+
 namespace P_As_AutoClicker
 {
     // TODO: make sftw listen to keyboard inputs even when the window is not focused
@@ -18,14 +21,15 @@ namespace P_As_AutoClicker
 
         public MainWindow()
         {
+            // Make key handler to start kb hook GLL
+            KeyHandler.StartHook();
+            KeyHandler.OnKeyPressed += OnKeyDown;
             InitializeComponent();
 
             /* Enable KyePreview so it can capture key events even when the window is not focused
              (mais aussi pcq les keyboard hooks en LL son trop compliqués à mettre en place 
               et si je fais pas en LL ça trigger l'antivirus)*/
             KeyPreview = true;
-
-            KeyDown += OnKeyDown;
 
             // Set default setting properties
             startStopHotkey = Keys.F6;
@@ -39,7 +43,7 @@ namespace P_As_AutoClicker
             numericUpDownDelay_Seconds.Value = pressDelayRaw[2];
             numericUpDownDelay_Milliseconds.Value = pressDelayRaw[3];
             numericUpDown_DelayOffset.Value = delayOffset;
-            listBox_PressType.SelectedItem = pressType;
+            listBox_PressType.SetSelected(pressType, true);
             // TODO: make func to clean this scheisse
         }
         public void SetVariables()
@@ -61,7 +65,7 @@ namespace P_As_AutoClicker
                 clickPos.Y = (int)numericUpDown_CursorPosY.Value;
             }
 
-            clickOffset = (int)numericUpDown_DelayOffset.Value;
+            clickOffset = (int)numericUpDown_CursorOffset.Value;
 
 
             pressDelay = (int)((pressDelayRaw[0] * 3.6e+6)
@@ -69,9 +73,9 @@ namespace P_As_AutoClicker
             + (pressDelayRaw[2] * 1000)
             + (pressDelayRaw[3]));
         }
-        public void OnKeyDown(object sender, KeyEventArgs e)
+        public void OnKeyDown(Keys pressedKey)
         {
-            if (e.KeyCode == startStopHotkey)
+            if (pressedKey == startStopHotkey)
                 if (bIsStarted)
                     StopPress();
                 else
@@ -96,11 +100,15 @@ namespace P_As_AutoClicker
 
             if (pressType == 1)
             {
-                await Task.Delay(15);
+                await Task.Delay(100);
                 MouseHandler.DoLeftClick(m_clickPos);
             }
 
-            await Task.Delay(pressDelay + rand.Next(delayOffset * -1, delayOffset));
+            int newPressDelay = pressDelay + rand.Next(delayOffset * -1, delayOffset);
+            if (newPressDelay < 0)
+                newPressDelay = 0;
+
+            await Task.Delay(newPressDelay);
 
             DoPress();
         }

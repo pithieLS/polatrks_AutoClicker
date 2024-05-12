@@ -33,11 +33,11 @@
             btn_Stop = new Button();
             groupBox_TimerSettings = new GroupBox();
             groupBox1 = new GroupBox();
-            label2 = new Label();
+            radioButton_RepeatNTimes = new RadioButton();
+            radioButton_RepeatUntilStopped = new RadioButton();
             label_Repeat2 = new Label();
             label_Repeat1 = new Label();
             numericUpDown_RepeatN = new NumericUpDown();
-            checkBox_RepeatUntilStopped = new CheckBox();
             label6 = new Label();
             groupBox_Delay = new GroupBox();
             numericUpDownDelay_Milliseconds = new NumericUpDown();
@@ -115,11 +115,11 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(radioButton_RepeatNTimes);
+            groupBox1.Controls.Add(radioButton_RepeatUntilStopped);
             groupBox1.Controls.Add(label_Repeat2);
             groupBox1.Controls.Add(label_Repeat1);
             groupBox1.Controls.Add(numericUpDown_RepeatN);
-            groupBox1.Controls.Add(checkBox_RepeatUntilStopped);
             groupBox1.Controls.Add(label6);
             groupBox1.Location = new Point(6, 169);
             groupBox1.Name = "groupBox1";
@@ -128,22 +128,31 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Delay";
             // 
-            // label2
+            // radioButton_RepeatNTimes
             // 
-            label2.AutoSize = true;
-            label2.BackColor = SystemColors.ControlDark;
-            label2.Font = new Font("Segoe UI", 30F);
-            label2.ForeColor = Color.Coral;
-            label2.Location = new Point(33, 20);
-            label2.Name = "label2";
-            label2.Size = new Size(164, 67);
-            label2.TabIndex = 9;
-            label2.Text = "TODO";
+            radioButton_RepeatNTimes.AutoSize = true;
+            radioButton_RepeatNTimes.Location = new Point(6, 61);
+            radioButton_RepeatNTimes.Name = "radioButton_RepeatNTimes";
+            radioButton_RepeatNTimes.Size = new Size(17, 16);
+            radioButton_RepeatNTimes.TabIndex = 6;
+            radioButton_RepeatNTimes.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_RepeatUntilStopped
+            // 
+            radioButton_RepeatUntilStopped.AutoSize = true;
+            radioButton_RepeatUntilStopped.Checked = true;
+            radioButton_RepeatUntilStopped.Location = new Point(6, 26);
+            radioButton_RepeatUntilStopped.Name = "radioButton_RepeatUntilStopped";
+            radioButton_RepeatUntilStopped.Size = new Size(169, 24);
+            radioButton_RepeatUntilStopped.TabIndex = 5;
+            radioButton_RepeatUntilStopped.TabStop = true;
+            radioButton_RepeatUntilStopped.Text = "Repeat until stopped";
+            radioButton_RepeatUntilStopped.UseVisualStyleBackColor = true;
             // 
             // label_Repeat2
             // 
             label_Repeat2.AutoSize = true;
-            label_Repeat2.Location = new Point(152, 58);
+            label_Repeat2.Location = new Point(166, 58);
             label_Repeat2.Name = "label_Repeat2";
             label_Repeat2.Size = new Size(45, 20);
             label_Repeat2.TabIndex = 4;
@@ -152,7 +161,7 @@
             // label_Repeat1
             // 
             label_Repeat1.AutoSize = true;
-            label_Repeat1.Location = new Point(11, 58);
+            label_Repeat1.Location = new Point(25, 58);
             label_Repeat1.Name = "label_Repeat1";
             label_Repeat1.Size = new Size(56, 20);
             label_Repeat1.TabIndex = 3;
@@ -160,23 +169,11 @@
             // 
             // numericUpDown_RepeatN
             // 
-            numericUpDown_RepeatN.Location = new Point(73, 56);
+            numericUpDown_RepeatN.Location = new Point(87, 56);
             numericUpDown_RepeatN.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             numericUpDown_RepeatN.Name = "numericUpDown_RepeatN";
             numericUpDown_RepeatN.Size = new Size(73, 27);
             numericUpDown_RepeatN.TabIndex = 2;
-            // 
-            // checkBox_RepeatUntilStopped
-            // 
-            checkBox_RepeatUntilStopped.AutoSize = true;
-            checkBox_RepeatUntilStopped.Checked = true;
-            checkBox_RepeatUntilStopped.CheckState = CheckState.Checked;
-            checkBox_RepeatUntilStopped.Location = new Point(6, 26);
-            checkBox_RepeatUntilStopped.Name = "checkBox_RepeatUntilStopped";
-            checkBox_RepeatUntilStopped.Size = new Size(179, 24);
-            checkBox_RepeatUntilStopped.TabIndex = 1;
-            checkBox_RepeatUntilStopped.Text = "Repeat until stoppped";
-            checkBox_RepeatUntilStopped.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -488,7 +485,6 @@
         private GroupBox groupBox1;
         private Label label6;
         private NumericUpDown numericUpDown_RepeatN;
-        private CheckBox checkBox_RepeatUntilStopped;
         private Label label_Repeat2;
         private Label label_Repeat1;
         private Label label_DelayOffset;
@@ -512,6 +508,7 @@
         private NumericUpDown numericUpDownDelay_Hours;
         private NumericUpDown numericUpDown_CursorPosY;
         private NumericUpDown numericUpDown_CursorPosX;
-        private Label label2;
+        private RadioButton radioButton_RepeatNTimes;
+        private RadioButton radioButton_RepeatUntilStopped;
     }
 }

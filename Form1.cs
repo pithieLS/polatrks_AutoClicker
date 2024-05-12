@@ -18,6 +18,8 @@ namespace P_As_AutoClicker
         private static Point clickPos;
         private static int clickOffset;
         private static bool bIsClickInCurrentPos;
+        private static int repeatIndex;
+        private static int repeatIndexMax; //-1 if repeating indefinitly
 
         public MainWindow()
         {
@@ -36,6 +38,8 @@ namespace P_As_AutoClicker
             pressDelayRaw = [0, 0, 0, 100];
             delayOffset = 0;
             pressType = 0;
+            repeatIndex = 0;
+            repeatIndexMax = -1;
             // Then in UI
             RefreshStartStopButtons();
             numericUpDownDelay_Hours.Value = pressDelayRaw[0];
@@ -58,8 +62,8 @@ namespace P_As_AutoClicker
             pressType = listBox_PressType.SelectedIndex;
 
             bIsClickInCurrentPos = radioButton_CurrentPosition.Checked;
-            
-            if(!bIsClickInCurrentPos)
+
+            if (!bIsClickInCurrentPos)
             {
                 clickPos.X = (int)numericUpDown_CursorPosX.Value;
                 clickPos.Y = (int)numericUpDown_CursorPosY.Value;
@@ -72,6 +76,14 @@ namespace P_As_AutoClicker
             + (pressDelayRaw[1] * 60000)
             + (pressDelayRaw[2] * 1000)
             + (pressDelayRaw[3]));
+
+            if (radioButton_RepeatNTimes.Checked)
+                repeatIndexMax = (int)numericUpDown_RepeatN.Value;
+            else
+                repeatIndexMax = -1;
+
+            repeatIndex = 1; // Starts at 1 or it count 1 more
+
         }
         public void OnKeyDown(Keys pressedKey)
         {
@@ -110,6 +122,12 @@ namespace P_As_AutoClicker
 
             await Task.Delay(newPressDelay);
 
+            if(repeatIndexMax > -1)
+                if (repeatIndex >= repeatIndexMax)
+                    StopPress();
+
+            repeatIndex++;
+
             DoPress();
         }
 
@@ -120,7 +138,7 @@ namespace P_As_AutoClicker
             DoPress();
         }
 
-        private void StopPress()
+        private static void StopPress()
         {
             bIsStarted = false;
         }

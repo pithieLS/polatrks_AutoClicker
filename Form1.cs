@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace P_As_AutoClicker
+namespace polatrks_AutoClicker
 {
     // TODO: make sftw listen to keyboard inputs even when the window is not focused
     public partial class MainWindow : Form

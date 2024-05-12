@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace P_As_AutoClicker
+namespace polatrks_AutoClicker
 {
     public class MouseHandler
     {

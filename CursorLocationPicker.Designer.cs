@@ -1,4 +1,4 @@
-﻿namespace P_As_AutoClicker
+﻿namespace polatrks_AutoClicker
 {
     partial class CursorLocationPicker
     {
@@ -37,9 +37,9 @@
             // label_XValue
             // 
             label_XValue.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label_XValue.Location = new Point(26, 9);
+            label_XValue.Location = new Point(27, 9);
             label_XValue.Name = "label_XValue";
-            label_XValue.Size = new Size(41, 20);
+            label_XValue.Size = new Size(58, 20);
             label_XValue.TabIndex = 0;
             label_XValue.Text = "0000";
             // 
@@ -55,7 +55,7 @@
             // label_Y
             // 
             label_Y.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label_Y.Location = new Point(74, 9);
+            label_Y.Location = new Point(72, 9);
             label_Y.Name = "label_Y";
             label_Y.Size = new Size(20, 20);
             label_Y.TabIndex = 3;
@@ -64,9 +64,9 @@
             // label_YValue
             // 
             label_YValue.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label_YValue.Location = new Point(90, 9);
+            label_YValue.Location = new Point(88, 9);
             label_YValue.Name = "label_YValue";
-            label_YValue.Size = new Size(41, 20);
+            label_YValue.Size = new Size(45, 20);
             label_YValue.TabIndex = 2;
             label_YValue.Text = "0000";
             // 

@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("P-As_AutoClicker")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("polatrks_AutoClicker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd9c3600468256dd661d4caab017a3c5a92c05b5")]
-[assembly: System.Reflection.AssemblyProductAttribute("P-As_AutoClicker")]
-[assembly: System.Reflection.AssemblyTitleAttribute("P-As_AutoClicker")]
+[assembly: System.Reflection.AssemblyProductAttribute("polatrks_AutoClicker")]
+[assembly: System.Reflection.AssemblyTitleAttribute("polatrks_AutoClicker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

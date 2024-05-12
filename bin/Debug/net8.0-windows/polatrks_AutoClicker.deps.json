@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "polatrks_AutoClicker/1.0.0": {
+        "runtime": {
+          "polatrks_AutoClicker.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "polatrks_AutoClicker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

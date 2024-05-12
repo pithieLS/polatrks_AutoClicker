@@ -1,4 +1,4 @@
-namespace P_As_AutoClicker
+namespace polatrks_AutoClicker
 {
     internal static class Program
     {

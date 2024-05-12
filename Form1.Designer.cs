@@ -1,4 +1,4 @@
-﻿namespace P_As_AutoClicker
+﻿namespace polatrks_AutoClicker
 {
     partial class MainWindow
     {
@@ -449,7 +449,7 @@
             Controls.Add(btn_Start);
             MaximizeBox = false;
             Name = "MainWindow";
-            Text = "P-A's Autoclicker";
+            Text = "polatrk's Autoclicker";
             groupBox_TimerSettings.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

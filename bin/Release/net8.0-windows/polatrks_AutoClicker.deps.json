@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "P-As_AutoClicker/1.0.0": {
+      "polatrks_AutoClicker/1.0.0": {
         "runtime": {
-          "P-As_AutoClicker.dll": {}
+          "polatrks_AutoClicker.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "P-As_AutoClicker/1.0.0": {
+    "polatrks_AutoClicker/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
